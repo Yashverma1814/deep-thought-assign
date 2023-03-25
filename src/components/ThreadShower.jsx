@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const ThreadShower = () => {
+export const ThreadShower = ({link}) => {
   return (
-    <div>ThreadShower</div>
+    <div>
+      <iframe src={link} frameborder="0" ></iframe>
+    </div>
   )
 }

@@ -93,14 +93,14 @@
   border-radius: 5px;
 }
 .cardHeadingIcon{
-  width: 25rem;
+  width: 32rem;
   background-color: black;
   color: white;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   padding: 0.3rem;
   display: grid;
-  grid-template-columns: 90% 10%;
+  grid-template-columns: 93% 7%;
 }
 .cardHeading{
   text-align: center;
@@ -116,6 +116,19 @@
   padding-bottom: 1.2rem;
 }
 .cardSecondPart{
-  width: 25.5rem;
+  width: 32.5rem;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
   border: 0.1px solid gainsboro;
+}
+.cardMainDiv{
+  margin-bottom: 2rem;
+}
+.allCardDiv{
+  width: 70rem;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  margin-left: 15rem;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 }
