@@ -99,6 +99,8 @@
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   padding: 0.3rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
   display: grid;
   grid-template-columns: 93% 7%;
 }
@@ -120,6 +122,7 @@
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
   border: 0.1px solid gainsboro;
+  height: 600px;
 }
 .cardMainDiv{
   margin-bottom: 2rem;
@@ -131,4 +134,99 @@
   margin-left: 15rem;
   display: grid;
   grid-template-columns: repeat(2,1fr);
+}
+.notepadHeading{
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.notepadInput{
+  padding: 0.8rem;
+  width: 28.5rem;
+  border: none;
+  background-color: aliceblue;
+  border-radius: 5px;
+}
+.cardHeadingBoard{
+  margin-left: 1rem;
+}
+.cardHeadingIconBoard{
+  width: 22rem;
+  background-color: black;
+  color: white;
+  border-top-right-radius: 16px;
+  padding: 0.3rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  display: grid;
+  grid-template-columns: 93% 7%;
+}
+.cardSecondPartBoard{
+  width: 22.5rem;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border: 0.1px solid gainsboro;
+  height: 600px;
+  background-color: white;
+}
+.cardMainDivToolbar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+
+}
+.cardHeadingIconToolbar{
+  width: 3rem;
+  height: 10px;
+  background-color: black;
+  color: white;
+  border-top-right-radius: 16px;
+  padding: 0.3rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  display: grid;
+  grid-template-columns: 93% 7%;
+}
+.cardSecondPartToolbar{
+  width: 3.5rem;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border: 0.1px solid gainsboro;
+  height: 600px;
+  background-color: white;
+}
+.toolbarBtn{
+  margin-left: 0.6rem;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: 0.1px solid blue;
+  background-color: white;
+  color: blue;
+  font-weight: 600;
+}
+.cardMainDivBoard{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: all 0.4s;
+}
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.cardMainDivBoard--open{
+  transform: translateX(0%); 
+}
+.backdrop--open{
+  display: block;
 }

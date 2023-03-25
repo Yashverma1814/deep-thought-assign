@@ -1,20 +1,21 @@
 import React, { useEffect, useState } from 'react'
 import { Card } from '../components/Card'
+import { JourneyBoard } from '../components/JourneyBoard'
 import { Navbar } from '../components/Navbar'
 import { Tagbar } from '../components/Tagbar'
+import { Toolbar } from '../components/Toolbar'
 
 export const HomePage = () => {
 
-  const [data,setData] = useState('');
+  const [data,setData] = useState([]);
 
   const fetchData = () => {
     fetch(`http://localhost:8000/assets`)
-    .then(res=>{
+    .then((res)=>{
       return res.json();
     })
-    .then(res=>{
+    .then((res)=>{
       setData(res);
-      console.log(res);
       console.log(data)
     })
   }
@@ -36,11 +37,8 @@ export const HomePage = () => {
         </div>
         <div className="allCardDiv">
           {data.map((el)=>{
-            return <div key={el.asset_id}>
-              <Card val={el}/>
-            </div>
-          })
-          }
+            return (<div key={el.asset_id}><Card val={el}/></div>)
+          })}
         </div>
     </div>
   )
