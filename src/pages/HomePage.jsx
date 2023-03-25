@@ -1,5 +1,7 @@
 import React from 'react'
+import { Card } from '../components/Card'
 import { Navbar } from '../components/Navbar'
+import { Tagbar } from '../components/Tagbar'
 
 
 export const HomePage = () => {
@@ -10,6 +12,10 @@ export const HomePage = () => {
             <div className='headingDiv'>Technical Project Management</div>
             <div><button className='submitTaskBtn'>Submit Task</button></div>
         </div>
+        <div>
+          <Tagbar />
+        </div>
+        <Card />
     </div>
   )
 }
