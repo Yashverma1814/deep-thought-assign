@@ -35,3 +35,48 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* <========Navbar========> */
+.logoDiv{
+  padding: 1.5rem;
+  margin-left: 3rem;
+
+}
+.iconsDiv{
+  margin-right: 2rem;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  width: 12rem;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
+.navMain{
+  background-color: gainsboro;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 5px rgb(204, 203, 203);
+}
+.headingDiv{
+  color: blue;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-left: 12rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.submitTaskBtn{
+  padding: 0.7rem;
+  color: white;
+  background-color: blue;
+  border-radius: 8px;
+  border: none;
+  margin-top: 2.1rem;
+  margin-right: 12rem;
+  margin-bottom: 3rem;
+}
+.heading-submit-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
